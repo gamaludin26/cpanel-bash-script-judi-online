@@ -20,7 +20,7 @@ Jika file .db valid setelah edit, maka disinkronkan ke cluster DNS menggunakan s
 
 =======================================================================================================
 
-****clean_dns_www.shh** ** untuk memperbaiki serangan hack www dns pada server cpanel 
+****clean_dns_www.sh** ** untuk memperbaiki serangan hack www dns pada server cpanel 
 ------------------------------------------------------------------------------------------
 
 🎯 Tujuan Utama:
@@ -58,3 +58,31 @@ Serial DNS di SOA akan di-update (diperbarui otomatis agar perubahan dikenali ol
 Sinkronisasi ke DNS Cluster
 
 Perubahan pada setiap domain disinkronkan ke cluster DNS cPanel.
+
+=======================================================================================================
+
+****scan-judi-chmod.sh ** **  scan terhadap file di cPanel berdasarkan kata kunci terkait situs judi atau konten mencurigakan, lalu mengunci file yang terdeteksi
+------------------------------------------------------------------------------------------
+
+
+Script scan-judi-chmod.sh yang Anda lampirkan berfungsi untuk melakukan pemeriksaan terhadap file di cPanel berdasarkan kata kunci terkait situs judi atau konten mencurigakan, lalu mengunci file yang terdeteksi. Berikut penjelasan fungsinya secara singkat dan jelas:
+
+🧾 Fungsi Script scan-judi-chmod.sh
+Script ini:
+
+1.	Mengambil daftar user cPanel dari /var/cpanel/users.
+
+2.	Memuat daftar keyword (dalam hal ini adalah nama-nama yang umum digunakan situs judi) dari file keywords.txt.
+
+3.	Memindai direktori public_html tiap user cPanel menggunakan keyword tersebut (case-insensitive).
+
+4.	Jika ditemukan file yang mengandung keyword:
+
+5.	File akan di-log ke scan.log per user dan ke scan_gacor_all.log global.
+
+6.	File akan di-backup ke /backup/backupgacor/[username]/.
+
+7.	File akan di-lock dengan chmod 000.
+
+8.	Menyimpan hasil scan log per user dan log global.
+
