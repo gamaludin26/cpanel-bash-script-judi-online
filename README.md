@@ -1,4 +1,4 @@
-****cleanup_dns_cluster-wilcard.sh** ** untuk memperbaiki serangan hack dns pada server cpanel 
+****cleanup_dns_cluster-wilcard.sh** ** untuk memperbaiki serangan hack dns dns wildcard * pada server cpanel 
 =======================================================================================================
 
 Script ini digunakan untuk menghapus entri DNS wildcard (* dan *.subdomain) yang mengarah ke IP tertentu contoh  (162.0.227.145), memvalidasi domain yang aktif, dan menyinkronkan perubahan ke DNS cluster di server berbasis cPanel.
@@ -20,7 +20,7 @@ Jika file .db valid setelah edit, maka disinkronkan ke cluster DNS menggunakan s
 
 =======================================================================================================
 
-****clean_dns_www.shh** ** untuk memperbaiki serangan hack dns pada server cpanel 
+****clean_dns_www.shh** ** untuk memperbaiki serangan hack www dns pada server cpanel 
 ------------------------------------------------------------------------------------------
 
 🎯 Tujuan Utama:
