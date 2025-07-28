@@ -86,3 +86,8 @@ Script ini:
 
 8.	Menyimpan hasil scan log per user dan log global.
 
+**rubahpasswordcpanel(www).sh**  =untuk merubah password akun www yang terlist dan terscan
+
+**rubahpasswordcpanewildacardy.sh** =untuk merubah password akun wildcard yang terlist dan terscan
+
+
